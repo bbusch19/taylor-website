@@ -1,0 +1,16 @@
+<navbar>
+    <div id="logo">HOME</div>
+    <div>ABOUT</div>
+    <div>PROJECTS</div>
+    <div>CONTACT</div>
+</navbar>
+<header>
+    <p>
+        TAYLOR AGUIRRE
+        <br />
+        <span id="photo-text">PHOTOGRAPHY</span>
+    </p>
+    <div class="carousel">
+        <div ng-repeat="slide in slides"ng-style="{'background': 'url({{slide}})', 'height': '100vh', 'width': '100%', 'background-position': 'center', 'background-size': 'cover'}"></div>
+    </div>
+</header>

@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,200);
+$font: 'Raleway', sans-serif;
+
+
+main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+navbar {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    color: white;
+    font-family: $font;
+
+    div {
+        cursor: pointer;
+    }
+}
+
+.carousel {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    p {
+        text-align: center;
+        position: absolute;
+        font-family: Raleway,sans-serif;
+        letter-spacing: 10px;
+        line-height: 58px;
+        font-weight: 300;
+        font-size: 55px;
+        z-index: 1;
+        top: 30%;
+        left: 50%;
+        margin-left: -292px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #photo-text {
+        font-weight: 200;
+        margin-top: -10px;
+        font-size: 45px;
+        letter-spacing: normal;
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        p {
+            font-size: 35px;
+            margin-left: -210px;
+            line-height: 35px;
+        }
+        #photo-text {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        p {
+            font-size: 27px;
+            margin-left: -177px;
+            line-height: 31px;
+        }
+        #photo-text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        p {
+            font-size: 20px;
+            margin-left: -150px;
+            line-height: 31px;
+        }
+        #photo-text {
+            font-size: 20px;
+        }
+    }
+}
