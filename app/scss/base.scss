@@ -38,6 +38,11 @@ navbar {
     justify-content: space-around;
     color: white;
     z-index: 3;
+    transition: 1s;
+}
+
+.nav-height {
+    height: 50px;
 }
 
 .carousel {
@@ -76,12 +81,37 @@ navbar {
 
 @media (max-width: 768px) {
 
+    navbar {
+        background: white;
+        color: black;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        overflow: scroll;
+
+        #logo {
+            font-weight: 300;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: rgba(0, 0, 0, 0.9);
+        }
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+        font-weight: 200px;
+        margin-left: 10px;
+    }
+
     #hamburger {
+        min-height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         justify-content: space-around;
         flex-direction: column;
+        order: -1;
+        margin: 10px 10px -25px auto;
     }
 
     #canvas {
@@ -91,5 +121,9 @@ navbar {
         p {
             font-size: 5vw;
         }
+    }
+
+    .nav-height {
+        height: 150px;
     }
 }
