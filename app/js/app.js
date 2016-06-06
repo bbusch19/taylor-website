@@ -1,4 +1,4 @@
-angular.module('taylorApp', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
+angular.module('taylorApp', ['ui.router', 'firebase']).config(function($stateProvider, $urlRouterProvider) {
 
 $urlRouterProvider.otherwise('/');
 

@@ -43,6 +43,7 @@ navbar {
     color: white;
     z-index: 3;
     transition: 1s;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 
     div {
         cursor: pointer;
@@ -109,7 +110,7 @@ navbar {
     }
 
 
-    div {
+    .text-container {
         width: 70%;
         height: auto;
         margin: auto;
@@ -124,6 +125,55 @@ navbar {
     }
 
 }
+
+/* ==========================================================================
+    Recent Work
+========================================================================== */
+
+#projects {
+    @extend #about;
+    text-align: center;
+
+    .bar {
+        width: 75px;
+        height: 1px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+    }
+}
+
+.grid {
+    width: 90%;
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.image-box {
+    height: 20vw;
+    width: 20vw;
+    background: grey;
+    margin: 5px;
+}
+
+/* ==========================================================================
+    Media Queries for Image Grid
+========================================================================== */
+
+
+@media (max-width: 900px) {
+
+    .image-box {
+        height: 40vw;
+        width: 40vw;
+    }
+}
+
+
 
 /* ==========================================================================
     Mobie Media Query 1
@@ -175,5 +225,10 @@ navbar {
 
     .nav-height {
         height: 175px;
+    }
+
+    .image-box {
+        width: 90vw;
+        height: 90vw;
     }
 }
